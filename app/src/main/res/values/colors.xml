@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="main_color">#364627</color>
+    <color name="main_text_color">#364627</color>
+    <color name="secondary_color">#658443</color>
+    <color name="secondary_text_color">#658443</color>
+    <color name="main_card_bg">#F1F1F1</color>
+    <color name="main2_card_bg">#F9F9F9</color>
+    <color name="complete_card_bg">#B4CC9C</color>
+    <color name="second_card_bg">#E7F6D7</color>
+    <color name="clear_text_color">#F1F1F1</color>
+    <color name="clear2_text_color">#F9F9F9</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
