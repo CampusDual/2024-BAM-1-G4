@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "42962127626",
+    "project_id": "ecostep-ddbd4",
+    "storage_bucket": "ecostep-ddbd4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42962127626:android:f23f0aec1a625b4efa08f3",
+        "android_client_info": {
+          "package_name": "com.app.ecostep"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBahLSa5tdORZs7CLba-h2qIgRFCTQyjfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
