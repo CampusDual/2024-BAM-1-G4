@@ -1,0 +1,45 @@
+<resources>
+    <!--    Button Style-->
+    <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/clear_text_color</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!--    Button Social Login Style-->
+    <style name="SocialLoginButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="iconTint">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:backgroundTint">@color/cardview_light_background</item>
+        <item name="android:gravity">center</item>
+        <item name="iconGravity">textStart</item>
+
+    </style>
+
+    <!-- TextInputLayout Style -->
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/background_text_input</item>
+        <item name="boxStrokeColor">@color/main_text_color</item>
+        <item name="hintTextColor">@color/main_text_color</item>
+        <item name="startIconTint">@color/main_text_color</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+
+    <!-- TextInputEditText Style -->
+
+    <style name="TextInputEditTextStyle">
+        <item name="android:background">@color/background_text_input</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:padding">4dp</item>
+    </style>
+</resources>
+
+

@@ -11,4 +11,6 @@
     <color name="clear_text_color">#F1F1F1</color>
     <color name="clear2_text_color">#F9F9F9</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F1F1F1</color>
+    <color name="background_text_input">#F3F7FB</color>
 </resources>
