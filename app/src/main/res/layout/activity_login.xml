@@ -16,57 +16,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/actor_regular"
-        android:text="@string/title_action_signup"
+        android:text="@string/title_action_login"
         android:textColor="@color/main_text_color"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/ilName"
+        app:layout_constraintBottom_toTopOf="@+id/ilEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity_title_logo"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.5" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ilName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/name"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_view_id"
-        app:startIconContentDescription="@string/content_description_start_icon"
-        app:startIconDrawable="@drawable/baseline_assignment_ind_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ilLastName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/last_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ilName"
-        app:startIconContentDescription="@string/content_description_start_icon"
-        app:startIconDrawable="@drawable/baseline_assignment_ind_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:textColor="@color/main_text_color" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ilEmail"
@@ -76,7 +36,9 @@
         android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ilLastName"
+        app:layout_constraintTop_toBottomOf="@id/text_view_id"
+        app:layout_constraintBottom_toTopOf="@+id/ilPassword"
+        app:layout_constraintVertical_bias="0.95"
         app:startIconContentDescription="@string/content_description_start_icon"
         app:startIconDrawable="@drawable/baseline_attach_email_24">
 
@@ -98,6 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ilEmail"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
         app:startIconContentDescription="@string/content_description_start_icon"
         app:startIconDrawable="@drawable/baseline_lock_24">
 
@@ -110,28 +73,27 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignUp"
         style="@style/PrimaryButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/btn_signup"
-        app:layout_goneMarginTop="10dp"
+        android:text="@string/btn_login"
+        app:layout_constraintBottom_toTopOf="@+id/dividerText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ilPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/ilPassword"
+        app:layout_goneMarginTop="10dp" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/dividerLeft"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/main_color"
-        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoogle"
         app:layout_constraintEnd_toStartOf="@id/dividerText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
+        app:layout_constraintStart_toStartOf="parent">
 
     </com.google.android.material.divider.MaterialDivider>
 
@@ -140,13 +102,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
         android:layout_marginTop="3dp"
-        app:layout_constraintStart_toEndOf="@id/dividerLeft"
-        app:layout_constraintEnd_toStartOf="@id/dividerRight"
-        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        android:layout_marginEnd="3dp"
         android:text="@string/separator"
-        >
+        app:layout_constraintBottom_toTopOf="@+id/btnGoogle"
+        app:layout_constraintEnd_toStartOf="@id/dividerRight"
+        app:layout_constraintStart_toEndOf="@id/dividerLeft">
 
     </TextView>
 
@@ -154,11 +115,12 @@
         android:id="@+id/dividerRight"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/main_color"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/main_color"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoogle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/dividerText"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
+        app:layout_constraintStart_toEndOf="@id/dividerText">
 
     </com.google.android.material.divider.MaterialDivider>
 
@@ -172,34 +134,37 @@
         android:text="@string/google"
         app:icon="@drawable/ic_google"
         app:iconTint="@null"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/already_account"
         app:layout_constraintEnd_toStartOf="@id/btnFacebook"
-        app:layout_constraintTop_toBottomOf="@id/dividerLeft" />
+        app:layout_constraintStart_toStartOf="parent"
+         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnFacebook"
         style="@style/SocialLoginButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/facebook"
-        app:iconTint="@null"
         app:icon="@drawable/ic_facebook"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/already_account"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/dividerLeft" />
+        app:layout_constraintStart_toEndOf="@+id/btnGoogle" />
 
     <TextView
         android:id="@+id/already_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/already_account"
+        android:text="@string/not_yet_account"
         android:textColor="@color/main_color"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnGoogle" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

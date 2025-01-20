@@ -1,17 +1,19 @@
 <resources>
     <string name="app_name">EcoStep</string>
     <string name="btn_signup">Registrarse</string>
+    <string name="btn_login">Ingresar</string>
     <string name="password">Contraseña</string>
     <string name="content_description_start_icon">ddd</string>
     <string name="email">Email</string>
     <string name="title_action_signup">¡Crea una Cuenta! 👋</string>
+    <string name="title_action_login">¡Bienvenido, Inicia Sesión! 👋</string>
     <string name="title_ecostep">ECOSTEP</string>
     <string name="name">Nombre(s)</string>
     <string name="last_name">Apellido(s)</string>
     <string name="google">Google</string>
     <string name="facebook">Facebook</string>
     <string name="already_account">¿Ya tienes cuenta? Ingresar</string>
-    <string name="login">Ingresar</string>
+    <string name="not_yet_account">¿Aún no tienes cuenta? Registrarse</string>
     <string name="separator">o</string>
 
 </resources>
