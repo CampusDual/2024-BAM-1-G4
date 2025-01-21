@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/text_view_id"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/actor_regular"
@@ -21,7 +21,6 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/ilEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity_title_logo"
         app:layout_constraintVertical_bias="0.5" />
