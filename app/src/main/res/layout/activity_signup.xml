@@ -6,13 +6,13 @@
     android:padding="16dp">
 
     <include
-        layout="@layout/activity_title_logo"
-        android:id="@+id/activity_title_logo"/>
+        android:id="@+id/activity_title_logo"
+        layout="@layout/activity_title_logo" />
 
 
     <TextView
         android:id="@+id/text_view_id"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/actor_regular"
@@ -21,7 +21,6 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/ilName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity_title_logo"
         app:layout_constraintVertical_bias="0.1" />
@@ -110,25 +109,24 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignUp"
         style="@style/PrimaryButtonStyle"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/btn_signup"
-        app:layout_goneMarginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ilPassword" />
+        app:layout_constraintTop_toBottomOf="@id/ilPassword"
+        app:layout_goneMarginTop="10dp" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/dividerLeft"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/main_color"
         android:layout_marginTop="15dp"
+        android:background="@color/main_color"
         app:layout_constraintEnd_toStartOf="@id/dividerText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
@@ -140,13 +138,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
         android:layout_marginTop="3dp"
-        app:layout_constraintStart_toEndOf="@id/dividerLeft"
-        app:layout_constraintEnd_toStartOf="@id/dividerRight"
-        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        android:layout_marginEnd="3dp"
         android:text="@string/separator"
-        >
+        app:layout_constraintEnd_toStartOf="@id/dividerRight"
+        app:layout_constraintStart_toEndOf="@id/dividerLeft"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp">
 
     </TextView>
 
@@ -154,8 +151,8 @@
         android:id="@+id/dividerRight"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/main_color"
         android:layout_marginTop="15dp"
+        android:background="@color/main_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/dividerText"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
@@ -172,8 +169,8 @@
         android:text="@string/google"
         app:icon="@drawable/ic_google"
         app:iconTint="@null"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnFacebook"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dividerLeft" />
 
     <com.google.android.material.button.MaterialButton
@@ -181,11 +178,11 @@
         style="@style/SocialLoginButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/facebook"
-        app:iconTint="@null"
         app:icon="@drawable/ic_facebook"
+        app:iconTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnGoogle"
         app:layout_constraintTop_toBottomOf="@+id/dividerLeft" />
