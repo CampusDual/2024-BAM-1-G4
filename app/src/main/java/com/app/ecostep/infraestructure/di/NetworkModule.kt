@@ -1,6 +1,6 @@
 package com.app.ecostep.infraestructure.di
 
-import com.app.ecostep.data.api.UserService
+import com.app.ecostep.data.api.user.IUserService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,8 +24,8 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideApiService(retrofit: Retrofit): UserService {
-        return retrofit.create(UserService::class.java)
+    fun provideApiService(retrofit: Retrofit): IUserService {
+        return retrofit.create(IUserService::class.java)
     }
 }
 

@@ -1,13 +1,22 @@
 package com.app.ecostep.data.repository
-import com.app.ecostep.data.api.UserService
+import com.app.ecostep.data.api.user.IUserService
 import com.app.ecostep.domain.model.User
 import com.app.ecostep.domain.repository.UserRepository
 import javax.inject.Inject
 
 class UserRepositoryImpl @Inject constructor(
-    private val apiService: UserService
+    private val apiService: IUserService
 ) : UserRepository {
-    override suspend fun createUser(token: String, user: User) {
-        apiService.createUser(token, user)
+    override suspend fun createUser(token: String, user: User): Result<Unit> {
+        return try {
+            val response = apiService.createUser(token, user)
+            if (response.isSuccessful) {
+                Result.success(Unit)
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
     }
 }
