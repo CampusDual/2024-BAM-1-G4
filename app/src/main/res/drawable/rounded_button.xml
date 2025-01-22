@@ -9,6 +9,5 @@
         android:right="0dp"
         android:top="0dp" />
     <shadowColor android:color="#55000000" />
-    <translation android:dx="5dp" android:dy="5dp" />
 </shape>
 

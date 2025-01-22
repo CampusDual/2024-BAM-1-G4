@@ -97,8 +97,8 @@
         app:endIconContentDescription="@string/content_description_start_icon"
         app:endIconDrawable="@drawable/ecoinds"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ilEcopoint"
-        app:layout_constraintTop_toEndOf="@+id/ilEcopoint">
+        app:layout_constraintTop_toBottomOf="@+id/ilEcopoint">
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEcoins"
