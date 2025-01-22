@@ -12,6 +12,12 @@ constraintlayout = "2.2.0"
 firebaseBom = "33.8.0"
 services = "4.4.2"
 crashlytics = "3.0.2"
+retrofit = "2.11.0"
+converterGson = "2.9.0"
+coroutines = "1.3.6"
+hiltVersion = "2.55"
+kspVersion = "1.9.24-1.0.20"
+lifecycle = "2.6.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,10 +31,18 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
 firebase-auth = { module = "com.google.firebase:firebase-auth-ktx" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson",  version.ref="converterGson"}
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core",  version.ref="coroutines"}
+hilt-android = { group = "com.google.dagger", name = "hilt-android" , version.ref = "hiltVersion"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hiltVersion"}
+lifecycle = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 googleServices = { id = "com.google.gms.google-services", version.ref= "services"}
 crashlytics = { id = "com.google.firebase.crashlytics", version.ref= "crashlytics"}
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinAndroidKsp = { id = "com.google.devtools.ksp", version.ref ="kspVersion" }
+hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref ="hiltVersion" }
 
