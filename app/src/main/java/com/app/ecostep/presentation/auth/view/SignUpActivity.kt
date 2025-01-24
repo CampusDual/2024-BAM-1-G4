@@ -1,6 +1,6 @@
-package com.app.ecostep.presentation.view
+package com.app.ecostep.presentation.auth.view
 
-import com.app.ecostep.presentation.viewmodel.SignUpViewModel
+import com.app.ecostep.presentation.auth.viewmodel.SignUpViewModel
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText

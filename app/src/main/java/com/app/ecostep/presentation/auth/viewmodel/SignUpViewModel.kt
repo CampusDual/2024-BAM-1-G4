@@ -1,4 +1,4 @@
-package com.app.ecostep.presentation.viewmodel
+package com.app.ecostep.presentation.auth.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
