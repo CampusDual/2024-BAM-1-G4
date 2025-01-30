@@ -1,4 +1,4 @@
-package com.app.ecostep.infraestructure.di
+package com.app.ecostep.core.di
 
 import com.app.ecostep.data.api.user.IUserService
 import dagger.Module

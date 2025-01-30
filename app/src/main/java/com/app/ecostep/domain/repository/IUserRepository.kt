@@ -2,6 +2,6 @@ package com.app.ecostep.domain.repository
 
 import com.app.ecostep.domain.model.User
 
-interface UserRepository {
+interface IUserRepository {
     suspend fun createUser(token: String, user: User): Result<Unit>
 }

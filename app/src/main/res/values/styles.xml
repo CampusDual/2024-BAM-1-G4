@@ -2,23 +2,27 @@
     <!--    Button Style-->
     <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/clear_text_color</item>
-        <item name="cornerRadius">12dp</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:padding">12dp</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:backgroundTint">@color/main_color</item>
         <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+
     </style>
 
     <!--    Button Social Login Style-->
     <style name="SocialLoginButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/main_text_color</item>
-        <item name="cornerRadius">12dp</item>
-        <item name="iconTint">@null</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:padding">12dp</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:backgroundTint">@color/cardview_light_background</item>
-        <item name="android:gravity">center</item>
         <item name="iconGravity">textStart</item>
+        <item name="iconSize">23dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/border_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:translationZ">0dp</item>
 
     </style>
 
@@ -42,6 +46,8 @@
         <item name="android:textColor">@color/main_text_color</item>
         <item name="android:padding">4dp</item>
     </style>
+
+    <color name="border_color">#2E000000</color>
 </resources>
 
 

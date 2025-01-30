@@ -1,7 +1,7 @@
-package com.app.ecostep.infraestructure.di
+package com.app.ecostep.core.di
 
 import com.app.ecostep.data.repository.UserRepositoryImpl
-import com.app.ecostep.domain.repository.UserRepository
+import com.app.ecostep.domain.repository.IUserRepository
 import dagger.Module
 import dagger.Binds
 import dagger.hilt.InstallIn
@@ -16,5 +16,5 @@ abstract class RepositoryModule {
     @Singleton
     abstract fun bindUserRepository(
         userRepositoryImpl: UserRepositoryImpl
-    ): UserRepository
+    ): IUserRepository
 }

@@ -6,4 +6,6 @@ plugins {
     alias(libs.plugins.crashlytics) apply false
     alias(libs.plugins.hiltAndroid) apply false
     alias(libs.plugins.kotlinAndroidKsp) apply false
+    alias(libs.plugins.androidx.navigation.safeargs) apply false
+
 }
