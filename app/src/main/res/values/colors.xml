@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="main_color">#364627</color>
+    <color name="main_color">#1C6434</color>
     <color name="main_text_color">#364627</color>
     <color name="secondary_color">#658443</color>
     <color name="secondary_text_color">#658443</color>
@@ -13,4 +13,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#F1F1F1</color>
     <color name="background_text_input">#F3F7FB</color>
+    <color name="black">#000000</color>
 </resources>

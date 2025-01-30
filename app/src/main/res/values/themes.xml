@@ -4,9 +4,11 @@
 <style name="Base.Theme.EcoStep" parent="Theme.Material3.DayNight.NoActionBar">
     <!-- Customize your light theme here. -->
     <item name="colorPrimary">@color/main_color</item>
-<!--    <item name="materialButtonStyle">@style/PrimaryButtonStyle</item>-->
+    <item name="android:fontFamily">@font/inter</item>
     <item name="android:windowBackground">@color/background_color</item>
     <item name="textInputStyle">@style/TextInputStyle</item>
+    <item name="android:statusBarColor">@color/white</item>
+    <item name="android:windowLightStatusBar">true</item>
 
 
 </style>

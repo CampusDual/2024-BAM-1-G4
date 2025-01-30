@@ -22,7 +22,7 @@
     <string name="country">Country</string>
     <string name="province">Province</string>
     <string name="comunity_province">Ecostep Comunity</string>
-    <string name="google">Google</string>
+    <string name="google_text">Google</string>
     <string name="facebook">Facebook</string>
     <string name="already_account">Already have an account? Log In</string>
     <string name="not_yet_account">Don’t have an account yet? Sign Up</string>

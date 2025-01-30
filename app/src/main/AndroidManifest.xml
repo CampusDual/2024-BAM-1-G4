@@ -16,7 +16,7 @@
         android:theme="@style/Theme.EcoStep"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.auth.view.SignUpActivity"
+            android:name=".AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

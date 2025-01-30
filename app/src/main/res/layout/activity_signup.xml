@@ -1,217 +1,192 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_start"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0" />-->
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="1" />
-    <include
-        android:id="@+id/activity_title_logo"
-        layout="@layout/activity_title_logo" />
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline_end"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="1" />-->
 
 
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/actor_regular"
-        android:text="@string/title_action_signup"
-        android:textColor="@color/main_text_color"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/ilName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activity_title_logo"
-        app:layout_constraintVertical_bias="0.1" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ilName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/name"
+<!--    <TextView-->
+<!--        android:id="@+id/text_view_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:fontFamily="@font/actor_regular"-->
+<!--        android:text="@string/title_action_signup"-->
+<!--        android:textColor="@color/main_text_color"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/activity_title_logo" />-->
 
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintTop_toBottomOf="@id/text_view_id"
-        app:startIconContentDescription="@string/content_description_start_icon"
-        app:startIconDrawable="@drawable/baseline_assignment_ind_24">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/ilLastName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="none"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guideline_end"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+<!--        app:startIconContentDescription="@string/content_description_start_icon"-->
+<!--        app:startIconDrawable="@drawable/baseline_assignment_ind_24"-->
+<!--        tools:layout_editor_absoluteY="364dp">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/etLastName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textColor="@color/main_text_color" />-->
 
-    </com.google.android.material.textfield.TextInputLayout>
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ilLastName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/last_name"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintTop_toBottomOf="@+id/ilName"
-        app:startIconContentDescription="@string/content_description_start_icon"
-        app:startIconDrawable="@drawable/baseline_assignment_ind_24">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/ilEmail"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:hint="@string/email"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guideline_end"-->
+<!--        app:startIconTint="@color/main_color"-->
+<!--        app:endIconTint="@color/main_color"-->
+<!--        app:boxStrokeColor="@color/main_color"-->
+<!--        app:hintTextColor="@color/main_text_color"-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:textColor="@color/main_text_color" />
+<!--        app:layout_constraintTop_toBottomOf="@id/ilLastName"-->
+<!--        app:startIconContentDescription="@string/content_description_start_icon"-->
+<!--        app:startIconDrawable="@drawable/baseline_attach_email_24">-->
 
-    </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/etEmail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="none" />-->
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ilEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/email"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:startIconTint="@color/main_color"
-        app:endIconTint="@color/main_color"
-        app:boxStrokeColor="@color/main_color"
-        app:hintTextColor="@color/main_text_color"
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
-        app:layout_constraintTop_toBottomOf="@id/ilLastName"
-        app:startIconContentDescription="@string/content_description_start_icon"
-        app:startIconDrawable="@drawable/baseline_attach_email_24">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/ilPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:hint="@string/password"-->
+<!--        app:endIconMode="password_toggle"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guideline_end"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ilEmail"-->
+<!--        app:startIconContentDescription="@string/content_description_start_icon"-->
+<!--        app:startIconDrawable="@drawable/baseline_lock_24">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/etPassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="textPassword" />-->
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ilPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/password"
-        app:endIconMode="password_toggle"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintTop_toBottomOf="@id/ilEmail"
-        app:startIconContentDescription="@string/content_description_start_icon"
-        app:startIconDrawable="@drawable/baseline_lock_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSignUp"
-        style="@style/PrimaryButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/btn_signup"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintTop_toBottomOf="@id/ilPassword"
-        app:layout_goneMarginTop="10dp" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnSignUp"-->
+<!--        style="@style/PrimaryButtonStyle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/btn_signup"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guideline_end"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ilPassword"-->
+<!--        app:layout_goneMarginTop="10dp" />-->
 
-    <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/dividerLeft"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="15dp"
-        android:background="@color/main_color"
-        app:layout_constraintEnd_toStartOf="@id/dividerText"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
+<!--    <com.google.android.material.divider.MaterialDivider-->
+<!--        android:id="@+id/dividerLeft"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:background="@color/main_color"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/dividerText"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">-->
 
-    </com.google.android.material.divider.MaterialDivider>
+<!--    </com.google.android.material.divider.MaterialDivider>-->
 
-    <TextView
-        android:id="@+id/dividerText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:text="@string/separator"
-        app:layout_constraintEnd_toStartOf="@id/dividerRight"
-        app:layout_constraintStart_toEndOf="@id/dividerLeft"
-        app:layout_constraintTop_toBottomOf="@id/btnSignUp">
+<!--    <TextView-->
+<!--        android:id="@+id/dividerText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:layout_marginEnd="3dp"-->
+<!--        android:text="@string/separator"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/dividerRight"-->
+<!--        app:layout_constraintStart_toEndOf="@id/dividerLeft"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btnSignUp">-->
 
-    </TextView>
+<!--    </TextView>-->
 
-    <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/dividerRight"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="15dp"
-        android:background="@color/main_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/dividerText"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
+<!--    <com.google.android.material.divider.MaterialDivider-->
+<!--        android:id="@+id/dividerRight"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:background="@color/main_color"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/dividerText"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">-->
 
-    </com.google.android.material.divider.MaterialDivider>
+<!--    </com.google.android.material.divider.MaterialDivider>-->
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnGoogle"
-        style="@style/SocialLoginButtonStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/google"
-        app:icon="@drawable/ic_google"
-        app:iconTint="@null"
-        app:layout_constraintEnd_toStartOf="@id/btnFacebook"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dividerLeft" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnGoogle"-->
+<!--        style="@style/SocialLoginButtonStyle"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:text="@string/google"-->
+<!--        app:icon="@drawable/ic_google"-->
+<!--        app:iconTint="@null"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/btnFacebook"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/dividerLeft" />-->
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnFacebook"
-        style="@style/SocialLoginButtonStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/facebook"
-        app:icon="@drawable/ic_facebook"
-        app:iconTint="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/dividerLeft" />
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btnFacebook"-->
+<!--        style="@style/SocialLoginButtonStyle"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="@string/facebook"-->
+<!--        app:icon="@drawable/ic_facebook"-->
+<!--        app:iconTint="@null"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnGoogle"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/dividerLeft" />-->
 
-    <TextView
-        android:id="@+id/already_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/already_account"
-        android:textColor="@color/main_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+<!--    <TextView-->
+<!--        android:id="@+id/already_account"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/already_account"-->
+<!--        android:textColor="@color/main_color"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

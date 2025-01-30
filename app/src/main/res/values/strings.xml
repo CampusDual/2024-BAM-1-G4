@@ -21,10 +21,15 @@
     <string name="country">Pais</string>
     <string name="province">Provincia</string>
     <string name="comunity_province">Comunidad Ecospet</string>
-    <string name="google">Google</string>
+    <string name="google_text">Google</string>
     <string name="facebook">Facebook</string>
     <string name="already_account">¿Ya tienes cuenta? Ingresar</string>
     <string name="not_yet_account">¿Aún no tienes cuenta? Registrarse</string>
     <string name="not_send_code">¿No has recibido el codigo? Reenviar</string>
     <string name="separator">o</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_boarding_description">Recuerda, que pequeñas acciones, hacen  grandes cambios.\n<b>¡Únete al movimiento eco!</b></string>
+    <string name="on_boarding_language">" 🇪🇦 Español (ES) <u>Editar</u>"</string>
+    <string name="on_boarding_title">¡Cuida el planeta gana recompensas!</string>
+    <string name="nextStep">Continuar</string>
 </resources>
